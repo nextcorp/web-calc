@@ -3,10 +3,10 @@ function clear_disp() {
 }
 
 function add_number(n) {
-    var number = Number.parseInt(document.getElementById("calc-display").innerText);
+    var number = document.getElementById("calc-display").innerText;
    // console.log("selected: " + n);
    // console.log("display: " + number);
-    if (number==0) {
+    if (Number.parseInt(number)==0) {
         document.getElementById("calc-display").innerText = n.toString();
     } else {
         if (document.getElementById("calc-display").innerText.length<10) {
@@ -14,6 +14,11 @@ function add_number(n) {
         }
     }
 }
+
+/*function add_dp() {
+    var currentNum = document.getElementById("calc-display").innerText
+    document.getElementById("calc-display").innerText = currentNum + ".";
+}*/
 
 let op_clicked = false;
 let op_num = 0;

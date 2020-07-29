@@ -1,0 +1,78 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #3b3b3b;
+}
+
+.calc-body {
+  color: white;
+  width: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#calc-display {
+  padding: 10px;
+  font-size: 50px;
+  background: #3b3b3b;
+  text-align: right;
+  margin-bottom: 20px;
+  width: 290px;
+  
+
+  border-radius: 20px;
+  box-shadow:  15px 15px 30px #323232, 
+              -15px -15px 30px #444444;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 15px;
+}
+
+.button {
+  float: left;
+  width: 40px;
+  font-size: 50px;
+  padding: 10px;
+  background: #3b3b3b;
+  text-align: center;
+  margin: 10px;
+
+  border-radius: 20px;
+  box-shadow:  10px 10px 20px #323232, 
+              -10px -10px 20px #444444;
+}
+
+.evalbutton {
+  float: left;
+  width: 40px;
+  font-size: 50px;
+  padding: 10px;
+  background: #3b3b3b;
+  text-align: center;
+  margin: 10px;
+
+  border-radius: 20px;
+  box-shadow:  10px 10px 20px #323232, 
+              -10px -10px 20px #444444;
+}
+
+.nobutton {
+  float: left;
+  width: 40px;
+  padding: 15px;
+  margin: 5px;
+
+}
+
+.button:hover {
+  background: #12db51;
+}
+
+.evalbutton:hover {
+  background: #ff8400;
+}

@@ -1,15 +1,18 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: #3b3b3b;
+  background: black;
 }
 
 .calc-body {
   color: white;
-  width: 350px;
+  width: 320px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: #3b3b3b;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 #calc-display {
@@ -70,9 +73,14 @@ body {
 }
 
 .button:hover {
-  background: #12db51;
+  background: #5d5d5d;
 }
 
 .evalbutton:hover {
-  background: #ff8400;
+  background: #757575;
+}
+
+@media only screen and (max-width: 600px) {
+  .button:hover {}
+  .evalbutton:hover {}
 }
